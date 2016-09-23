@@ -1,0 +1,889 @@
+$white: #fff;
+$black: #000;
+$dark: #232222;
+$green: #17a858;
+
+@import "_fonts";
+
+::selection {
+  background: rgba($green, .4);
+}
+
+body {
+	background: $white;
+}
+
+p,li,h1,h2,h3,h4,h5,h6 {
+	color: $black;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.green {
+	color: $green;
+}
+
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+ 
+.col-xs-1-5 {
+  width: 20%;
+  float: left;
+}
+ 
+@media (min-width: 768px) {
+  .col-sm-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+ 
+@media (min-width: 992px) {
+  .col-md-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+ 
+@media (min-width: 1200px) {
+  .col-lg-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+/* ___________________________Header___________________________ */
+
+header {
+	background: $dark;
+	padding: 7px 0 4px;
+	p {
+		color: $white;
+		font: 16px "Open Sans";
+		font-weight: 300;
+		padding-top: 7px;
+		img {
+			margin-right: 10px;
+			margin-top: -4px;
+		}
+	}
+	label {
+		color: $green;
+		text-transform: uppercase;
+		font: 19px "Roboto";
+		font-weight: 100;
+		padding-top: 5px;
+		img {
+			margin-top: -3px;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	.logo {
+		width: 100%;
+		height: auto;
+	}
+}
+
+/* ___________________________Top-Phone___________________________ */
+
+button {
+	background: $green;
+	border: none;
+	border-bottom: 3px solid darken($green, 10%);
+	text-transform: uppercase;
+	color: $white;
+	font: 16px "Roboto";
+	font-weight: 100;
+	padding: 10px 15px;
+	transition: .2s;
+	border-radius: 3px;
+	&:hover {
+		transform: translateY(3px);
+		border-color: transparent;
+	}
+	&:active {
+		background: darken($green, 10%);
+	}
+	&:focus {
+		outline: none;		
+	}
+}
+.top-phone {
+	padding: 18px 0 0px;
+	img {
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		margin-top: 7px;
+	}
+	p {
+		font: 14px "Roboto";
+		font-weight: 100;
+	}
+	.phone {
+		font: 24px "Roboto";
+		font-weight: 500;
+		line-height: 5px;
+	}
+	.phone-code {
+		font-weight: 100;
+	}
+}
+
+/* ___________________________Top-Slide___________________________ */
+
+.top-slide {
+	background: url("../img/top-slide-bg.png") no-repeat center;
+	background-size: cover;
+	padding: 130px 0 70px;
+	img {
+		margin-top: -80px;
+	}
+	h1 {
+		font: 52px "Roboto";
+		font-weight: 500;
+		text-transform: uppercase;
+		line-height: 60px;
+	}
+	h2 {
+		font: 36px "Roboto Thin";
+		font-weight: 50;
+		line-height: 36px;
+		text-transform: uppercase;
+	}
+}
+
+/* ___________________________Triggers___________________________ */
+
+.triggers {
+	margin-top: -110px;
+	.col-sm-1-5 {
+		padding-left: 15px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-right: 0;
+		margin-right: -5px;
+		background: $white;
+		&:last-child {
+			padding-right: 15px;
+		}
+	}
+	.wrapper {
+		background: #3d3d3d;
+		text-align: center;
+		height: 200px;
+		padding-top: 30px;
+		padding-left: 17px;
+		padding-right: 17px;
+	}
+	img {
+		padding-bottom: 25px;
+	}
+	p {
+		color: $white;
+		font: 16px "Open Sans";
+		font-weight: 700;
+	}
+}
+
+/* ___________________________Price___________________________ */
+
+.price {
+	padding-bottom: 70px;
+	h2 {
+		font: 36px "Roboto";
+		font-weight: 100;
+		line-height: 42px;
+		text-align: center;
+		position: relative;
+		padding-bottom: 40px;
+		padding-top: 30px;
+		span {
+			font-weight: 400;
+		}
+		&:after {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -50px;
+			width: 100px;
+			height: 1px;
+			background: $green;
+			content: "";
+		}
+	}
+	table {
+		margin-top: 40px;
+		border-spacing: 2px;
+		.logo-2 {
+			padding-left: 60px;
+		}
+		thead {
+			h3 {
+				text-transform: uppercase;
+				font: 24px "Roboto";
+				font-weight: 400;
+				line-height: 24px;
+			}
+			h4 {
+				font: 18px "Roboto";
+				font-weight: 100;
+				line-height: 4px;
+				padding-bottom: 20px;
+			}
+			p {
+				font: 14px "Roboto";
+				font-weight: 100;
+				line-height: 20px;
+			}		
+		}
+		tbody {
+			tr {
+				td {
+					font: 24px "Roboto";
+					font-weight: 400;
+					line-height: 20px;
+					&:first-child {
+						font-size: 15px;
+						font-weight: 100;
+						line-height: 22px;
+					}
+				}
+			}
+		}
+		td,
+		th {
+			background: #e9f5f5;
+			border: 4px solid $white;
+			padding: 10px 26px;
+			width: 330px;
+		}
+		th {
+			padding-top: 6px;
+			&:last-child {
+				padding-top: 14px;
+				img {
+					margin-top: 10px;
+				}
+			}
+		}
+		th:first-child {
+			background: none;
+			width: 180px;
+		}
+		.dark {
+			background: #3d3d3d;
+			color: $white;
+			padding-top: 17px;
+			padding-bottom: 17px;
+		}
+	}
+	.white {
+		background: none;
+	}
+}
+
+/* ___________________________Price 2___________________________ */
+
+.price-2 {
+	border-top: 1px solid #ebebeb;
+	td,
+	th {
+		width: 495px;
+	}
+	th {
+		padding-top: 25px !important;
+		&:last-child {
+			padding-top: 0;
+			img {
+				margin-top: 0 !important;
+			}
+		}
+	}
+}
+
+/* ___________________________Opt___________________________ */
+
+.opt {
+	background: url("../img/opt-bg.png") no-repeat center;
+	background-size: cover;
+	padding-bottom: 98px;
+	h2 {
+		color: $white;
+		font: 36px "Roboto";
+		font-weight: 100;
+		line-height: 42px;
+		text-align: center;
+		position: relative;
+		padding-bottom: 50px;
+		padding-top: 70px;
+		max-width: 600px;
+		display: inline-block;
+		span {
+			font-weight: 400;
+		}
+		&:after {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -50px;
+			width: 100px;
+			height: 1px;
+			background: $green;
+			content: "";
+		}
+	}
+	p {
+		color: $white;
+	}
+	.dark {
+		background: rgba($black, .5);
+		padding: 15px 30px;
+		margin-bottom: 8px;
+	}
+	.no-gutter > [class*='col-'] {
+	    padding-right: 4px;
+	    padding-left: 4px;
+	}
+	.big {
+		font: 68.56px "Open Sans";
+		font-weight: 500;
+		line-height: 80px;
+		margin-bottom: 0;
+	}
+	.first {
+		margin-top: 70px;
+	}
+	.desc {
+		font: 18px "Open Sans";
+		font-weight: 300;
+		line-height: 24px;
+		span {
+			font-size: 24px;
+			font-weight: 500;
+		}
+		.last {
+			font: 18px "Open Sans";
+		}
+	}
+}
+
+/* ___________________________Arenda___________________________ */
+
+.arenda {
+	text-align: center;
+	padding: 60px 0 80px;
+	.border {
+		border: 15px solid #a9c2c3;
+		padding: 40px;
+	}
+	h2 {
+		font: 24px "Open Sans";
+		font-weight: 900;
+		text-transform: uppercase;
+		line-height: 32px;
+		margin-bottom: 40px;
+		display: inline-block;
+		max-width: 530px;
+	}
+	p {
+		font: 24px "Open Sans";
+		font-weight: 300;
+		line-height: 20px;
+		text-align: left;
+		margin-left: 100px;
+	}
+	button {
+		margin-top: 40px;
+		width: 260px;
+		font: 16px "Open Sans";
+		font-weight: 500;
+		line-height: 20px;
+		padding: 15px 0;
+	}
+}
+
+/* ___________________________How we work______________________ */
+
+.work {
+	background: #def2f2;
+	padding: 60px 0;
+	.flex {
+		padding: 20px 0;
+	}
+	.cart {
+		margin-top: 15px;
+	}
+	p {
+		font: 16px "Open Sans";
+		font-weight: 100;
+		line-height: 24px;
+	}
+	h2 {
+		font: 36px "Roboto";
+		font-weight: 100;
+		line-height: 42px;
+		text-align: center;
+		position: relative;
+		padding-bottom: 40px;
+		span {
+			font-weight: 400;
+		}
+		&:after {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -50px;
+			width: 100px;
+			height: 1px;
+			background: $green;
+			content: "";
+		}
+	}
+	.first {
+		margin-top: 50px;
+	}
+}
+
+/* ___________________________Why BlueSun______________________ */
+
+.why {
+	margin-top: 90px;
+	background: url("../img/why-bg.png") no-repeat center;
+	background-size: cover;
+	.block {
+		background: #def2f2;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		padding: 55px;
+	}
+	h2 {
+		max-width: 450px;
+		font: 36px "Roboto";
+		font-weight: 100;
+		line-height: 42px;
+		position: relative;
+		padding-bottom: 40px;
+		span {
+			font-weight: 400;
+		}
+		&:after {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100px;
+			height: 1px;
+			background: $green;
+			content: "";
+		}
+	}
+	p {
+		margin-top: 60px;
+		font: 16px "Open Sans";
+		font-weight: 100;
+		line-height: 26px;
+	}
+}
+
+/* ___________________________Sertificats______________________ */
+
+.sertificats {
+	padding: 60px 0;
+	text-align: center;
+	h2 {
+		max-width: 450px;
+		font: 36px "Roboto";
+		font-weight: 100;
+		line-height: 42px;
+		position: relative;
+		padding-bottom: 40px;
+		display: inline-block;
+		span {
+			font-weight: 400;
+		}
+		&:after {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -50px;
+			width: 100px;
+			height: 1px;
+			background: $green;
+			content: "";
+		}
+	}
+	img {
+		margin-top: 60px;
+	}
+	a:nth-child(2) img {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+
+/* ___________________________Video______________________ */
+
+.video-sec {
+	background: #def2f2;
+	padding-top: 60px;
+	overflow: hidden;
+	h2 {
+		font: 36px "Roboto";
+		font-weight: 100;
+		line-height: 42px;
+		position: relative;
+		padding-bottom: 40px;
+		span {
+			font-weight: 400;
+		}
+		&:after {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100px;
+			height: 1px;
+			background: $green;
+			content: "";
+		}
+		&:before {
+			content: '';
+			display: block;
+			bottom: -50px;
+			right: 0;
+			width: 115px;
+			height: 73px;
+			background: url("../img/strelka.png");
+			position: absolute;
+		}
+	}
+	.fuu {
+		margin-top: 20px;
+		margin-bottom: -115px;
+	}
+	.tab {
+		margin-bottom: -300px;
+		margin-top: 35px;
+	}
+	.youtube {
+		position: relative;
+		a {
+			display: block;
+			margin-top: -282px;
+			img {
+				display: block;
+				margin-left: 60px;
+			}
+		}
+	}
+}
+
+/* ___________________________questions______________________ */
+
+.questions {
+	background: url("../img/questions-bg.png") no-repeat center;
+	background-size: cover;
+	padding: 60px 0 30px;
+	text-align: center;
+	h2 {
+		font: 36px "Roboto";
+		font-weight: 100;
+		line-height: 42px;
+		position: relative;
+		padding-bottom: 40px;
+		color: $white;
+		max-width: 450px;
+		display: inline-block;
+		span {
+			font-weight: 400;
+		}
+		&:after {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -50px;
+			width: 100px;
+			height: 1px;
+			background: $green;
+			content: "";
+		}
+	}
+	h3 {
+		font: 30px "Roboto";
+		font-weight: 100;
+		line-height: 42px;
+		position: relative;
+		padding-bottom: 40px;
+		color: $white;
+		span {
+			font-weight: 400;
+		}
+	}
+	.table-3 {
+		margin-top: 60px;
+		margin-bottom: 60px;
+		border-collapse: separate; 
+		border-spacing: 4px;
+	}
+	.table-3 td,
+	.table-3 th {
+		border: none;
+		margin: 2px;
+		padding: 10px;
+	}
+	thead th {
+		background: $green;
+		text-align: center;
+		h3 {
+			color: $white;
+			padding-bottom: 0px;
+			line-height: 30px;
+			font-size: 24px;
+			font-weight: 400;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+	tbody {
+		td {
+			background: $white;
+		}
+	}
+	th:first-child {
+		width: 630px;
+		background: transparent;		
+	}
+	table th:nth-child(2),
+	table th:nth-child(3),
+	table th:nth-child(4) {
+		width: 164px ;
+	}
+	.plus,
+	.minus {
+		font: 30px "Roboto";
+		font-weight: 300;
+		line-height: 42px;
+	}
+	.plus {
+		color: $green;
+	}
+	.minus {
+		color: #d22;
+	}
+	tr td {
+		text-align: center;
+	}
+	tr td:first-child {
+		font: 22px "Roboto";
+		font-weight: 100;
+		line-height: 28px;
+		text-align: left;
+		padding-left: 40px;
+	}
+}
+
+/*--------------------- Footer -----------------------*/
+
+footer {
+    padding: 90px 0;
+    position: relative;
+    text-align: center;
+    h2 {
+		font: 36px "Roboto";
+		font-weight: 100;
+		line-height: 42px;
+		position: relative;
+		padding-bottom: 40px;
+		max-width: 750px;
+		display: inline-block;
+		text-align: center;
+		display: inline-block;
+		span {
+			font-weight: 400;
+		}
+		&:after {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -50px;
+			width: 100px;
+			height: 1px;
+			background: $green;
+			content: "";
+		}
+	}
+}
+
+.email {
+   a {
+        color: $green;
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        text-decoration: underline;
+        &:hover {
+            color: $green;
+            text-decoration: none;
+        }
+   }
+   span {
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        color: #333333;
+    }
+}
+
+.footer--a-look-on-maps {
+    position: absolute;
+    bottom: -50px;
+    color: $green;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration: underline;
+    &:hover {
+        color: $green;
+        text-decoration: none;
+    }
+}
+
+.footer--p-first {
+	display: inline-block;
+	padding-top: 30px;
+    font-family: "Open Sans";
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    max-width: 660px;
+    margin: 0 auto 80px;
+    span {
+        font-family: "Open Sans";
+        font-weight: 900;
+    }
+}
+
+.footer--phone {
+    font-family: "Open Sans";
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2e2e2e;
+    span {
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-size: 24px;
+    }
+}
+
+.footer--address {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    color: #2e2e2e;
+}
+
+.footer--p-last {
+    font-family: "Open Sans";
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.footer--block-address {
+    box-shadow: 0 0 35px rgba($black, .15);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.footer--a-make-order,
+.footer--a-question {
+    width: 260px;
+    padding: 20px 0;
+}
+
+.footer--a-question {
+	background: $white;
+	color: $green;
+	border-top: 1px solid $green;
+	border-left: 1px solid $green;
+	border-right: 1px solid $green;
+	&:hover {
+		background: $green;
+		color: $white;
+	}
+}
+
+.footer--a-make-order {
+    color: $white;
+    background: #17a858;
+}
+
+.eldom {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 100px;
+    a {
+        color: $green;
+    }
+}
+
+/*----------- Modal -------------*/
+
+.bs-example-modal-lg1 {
+    text-align: center;
+}
+
+#yamaps {
+    width: 100%;
+    height: 500px;
+    padding: 20px
+}
+
+.btn-default {
+    color: #363636;
+    border-color: #363636;
+    &:hover {
+        border-color: #363636;
+        color: #363636;
+    }
+}
