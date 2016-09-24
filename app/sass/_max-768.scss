@@ -1,0 +1,544 @@
+@media (max-width: 768px) {
+
+	.col-xs-1-5 {
+	  width: 100%;
+	  float: left;
+	}
+
+	.flex {
+		display: flex;
+		align-items: center;
+	}
+
+	/* ___________________________Header___________________________ */
+
+	header {
+		text-align: center;
+		p {
+			font: 14px "Open Sans";
+			font-weight: 300;
+		}
+		.logo {
+			max-width: 280px;
+		}
+	}
+
+	/* ___________________________Top-Nav___________________________ */
+
+	nav {
+		position: absolute;
+		transform: translateY(-73px);
+		height: 73px;
+	    top: -10px;
+		display: flex;
+		align-items: center;
+		background: $white;
+		width: calc( (100% / 12) * 9 );
+		text-align: center;
+		transition: .3s;
+		li {
+			display: inline-block;
+			list-style: none;
+			a {
+				font: 16px "Roboto";
+				font-weight: 100;
+				line-height: 10px;
+				display: block;
+				padding: 0 48px;
+				color: $black;
+				&:hover,
+				&:focus {
+					text-decoration: none;
+					color: $green;
+				}
+			}
+		}
+	}
+
+	.togller:checked + nav {
+		transform: translateY(0);
+	}
+
+	/* ___________________________Top-Phone___________________________ */
+
+	button {
+		color: $white;
+		font: 14px "Roboto";
+		font-weight: 100;
+		padding: 5px 7px;
+	}
+
+	.top-phone {
+		padding: 10px 0 0px;
+		img {
+			margin-right: 10px;
+			margin-bottom: 10px;
+			max-width: 22px;
+			margin-top: 7px;
+		}
+		p {
+			font: 14px "Roboto";
+			font-weight: 100;
+		}
+		.phone {
+			text-align: center;
+			font: 18px "Roboto";
+			font-weight: 500;
+			line-height: 3px;
+		}
+	}
+
+	/* ___________________________Top-Slide___________________________ */
+
+	.top-slide {
+		padding: 30px 0 20px;
+		img {
+			margin-top: 0px;
+		}
+		h1 {
+			font: 30px "Roboto";
+			font-weight: 500;
+			line-height: 36px;
+		}
+		h2 {
+			font: 24px "Roboto Thin";
+			font-weight: 50;
+			line-height: 30px;
+		}
+		img {
+			margin-left: 50px;
+			max-width: 350px;
+			margin-bottom: 80px;
+		}
+	}
+
+	/* ___________________________Triggers___________________________ */
+
+	.triggers {
+		overflow: hidden;
+		.col-sm-1-5 {
+			padding-left: 0;
+			padding-top: 0;
+			padding-bottom: 15px;
+			padding-right: 0;
+			margin-right: -5px;
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+		.wrapper {
+			height: 130px;
+		}
+		p {
+			font: 16px "Open Sans";
+			font-weight: 700;
+		}
+	}
+
+	/* ___________________________Price___________________________ */
+
+	.price {
+		overflow-x: scroll;		
+		padding-bottom: 30px;
+		h2 {
+			font: 24px "Roboto";
+			font-weight: 100;
+			line-height: 30px;
+			padding-bottom: 20px;
+			padding-top: 0;
+		}
+		table {
+			margin-top: 20px;
+			border-spacing: 2px;
+			.logo-2 {
+				padding-left: 30px;
+			}
+			thead {
+				h3 {
+					font: 20px "Roboto";
+					font-weight: 400;
+				}
+				h4 {
+					font: 16px "Roboto";
+					font-weight: 100;
+					padding-bottom: 10px;
+				}
+				p {
+					font: 14px "Roboto";
+					font-weight: 100;
+					line-height: 20px;
+				}		
+			}
+			tbody {
+				tr {
+					td {
+						font: 18px "Roboto";
+						font-weight: 400;
+						line-height: 20px;
+						&:first-child {
+							font-size: 15px;
+							font-weight: 100;
+							line-height: 22px;
+						}
+					}
+				}
+			}
+			td,
+			th {
+				padding: 10px 10px;
+			}
+			th {
+				padding-top: 0px;
+				&:last-child {
+					padding-top: 3px;
+					img {
+						margin-top: 15px;
+					}
+				}
+			}
+		}
+	}
+
+	/* ___________________________Price 2___________________________ */
+
+	.price-2 {
+		border-top: 1px solid #ebebeb;
+		td,
+		th {
+			width: 495px;
+		}
+		th {
+			padding-top: 25px !important;
+			&:last-child {
+				padding-top: 5px !important;
+				img {
+					margin-top: 15px !important;
+				}
+			}
+		}
+	}
+
+	/* ___________________________Opt___________________________ */
+
+	.opt {
+		padding-bottom: 30px;
+		h2 {
+			font: 24px "Roboto";
+			font-weight: 100;
+			line-height: 30px;
+			padding-bottom: 20px;
+			padding-top: 10px;
+		}
+		.big {
+			font: 34px "Open Sans";
+			font-weight: 500;
+			line-height: 40px;
+		}
+		.first {
+			margin-top: 20px;
+		}
+		.desc {
+			font: 14px "Open Sans";
+			font-weight: 300;
+			line-height: 24px;
+			span {
+				font-size: 18px;
+				font-weight: 500;
+			}
+			.last {
+				font: 18px "Open Sans";
+			}
+		}
+	}
+
+	/* ___________________________Arenda___________________________ */
+
+	.arenda {
+		text-align: center;
+		padding: 0;
+		.border {
+			border: 15px solid #a9c2c3;
+			padding: 25px;
+		}
+		h2 {
+			font: 20px "Open Sans";
+			font-weight: 900;
+			line-height: 26px;
+			margin-bottom: 30px;
+		}
+		p {
+			font: 16px "Open Sans";
+			font-weight: 300;
+			line-height: 20px;
+			margin-left: 0px;
+		}
+		button {
+			margin-top: 30px;
+			font: 16px "Open Sans";
+			font-weight: 300;
+		}
+	}
+
+	/* ___________________________How we work______________________ */
+
+	.work {
+		padding: 30px 0;
+		.flex {
+			padding: 10px 0;
+		}
+		.cart {
+			margin-top: 0px;
+		}
+		p {
+			font: 16px "Open Sans";
+			font-weight: 100;
+			line-height: 20px;
+		}
+		h2 {
+			font: 24px "Roboto";
+			font-weight: 100;
+			line-height: 30px;
+			padding-bottom: 20px;
+		}
+		.first {
+			margin-top: 0px;
+		}
+	}
+
+	/* ___________________________Why BlueSun______________________ */
+
+	.why {
+		margin-top: -20px;
+		background: none;
+		.block {
+			background: rgba(#eee, .5);
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding: 25px;
+		}
+		h2 {
+			font: 24px "Roboto";
+			font-weight: 100;
+			line-height: 30px;
+			position: relative;
+			padding-bottom: 20px;
+		}
+		p {
+			margin-top: 20px;
+			font: 14px "Open Sans";
+			font-weight: 100;
+			line-height: 24px;
+		}
+	}
+
+	/* ___________________________Sertificats______________________ */
+
+	.sertificats {
+		padding: 20px 0;
+		h2 {
+			max-width: 450px;
+			font: 24px "Roboto";
+			font-weight: 100;
+			line-height: 30px;
+			padding-bottom: 20px;
+		}
+		img {
+			margin-top: 20px;
+			width: 28%;
+		}
+	}
+
+	/* ___________________________Video______________________ */
+
+	.video-sec {
+		padding-top: 20px;
+		h2 {
+			font: 24px "Roboto";
+			font-weight: 100;
+			line-height: 30px;
+			padding-bottom: 20px;
+			&:before {
+				display: none;
+			}
+		}
+		.fuu {
+			margin-top: 20px;
+			margin-bottom: -115px;
+		}
+		.tab {
+			margin-bottom: 0px;
+			margin-top: 35px;
+			width: 320px;
+		}
+		.youtube {
+			position: relative;
+			a {
+				display: block;
+				margin-top: -355px;
+				margin-left: -43px;
+				img {
+					display: block;
+					margin-left: 60px;
+					width: 286px;
+				}
+			}
+		}
+	}
+
+	/* ___________________________questions______________________ */
+
+	.questions {
+		overflow: hidden;
+		padding: 30px 0 30px;
+		h2 {
+			font: 24px "Roboto";
+			font-weight: 100;
+			line-height: 30px;
+			padding-bottom: 20px;
+		}
+		h3 {
+			font: 20px "Roboto";
+			font-weight: 100;
+			line-height: 24px;
+			padding-bottom: 0px;
+		}
+		.table-3 {
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+		thead th {
+			h3 {
+				padding-bottom: 0px;
+				line-height: 30px;
+				font-size: 18px;
+				font-weight: 300;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+		}
+		.plus,
+		.minus {
+			font: 18px "Roboto";
+			font-weight: 300;
+			line-height: 20px;
+		}
+		tr td:first-child {
+			font: 14px "Roboto";
+			font-weight: 100;
+			line-height: 20px;
+			text-align: left;
+			padding-left: 10px;
+		}
+	}
+
+	/*--------------------- Footer -----------------------*/
+
+	footer {
+		overflow: hidden;
+	    padding: 30px 0;
+	    h2 {
+			font: 24px "Roboto";
+			font-weight: 100;
+			line-height: 30px;
+			padding-bottom: 20px;
+		}
+	}
+
+	.email {
+	   a {
+	        font-family: "Open Sans";
+	        font-weight: 300;
+	        font-size: 16px;
+	        line-height: 20px;
+	        text-decoration: underline;
+	   }
+	   span {
+	        font-family: "Open Sans";
+	        font-weight: 700;
+	        font-size: 16px;
+	        line-height: 20px;
+	    }
+	}
+
+	.footer--a-look-on-maps {
+	    position: absolute;
+	    bottom: -30px;
+	    color: $green;
+	    font-family: "Open Sans";
+	    font-weight: 300;
+	    font-size: 16px;
+	    line-height: 20px;
+	    text-decoration: underline;
+	    &:hover {
+	        color: $green;
+	        text-decoration: none;
+	    }
+	}
+
+	.footer--p-first {
+		display: inline-block;
+		padding-top: 20px;
+	    font-family: "Open Sans";
+	    font-weight: 100;
+	    font-size: 16px;
+	    line-height: 28px;
+	    text-align: center;
+	    max-width: 660px;
+	    margin: 0 auto 80px;
+	    span {
+	        font-family: "Open Sans";
+	        font-weight: 900;
+	    }
+	}
+
+	.footer--phone {
+	    font-size: 16px;
+	    line-height: 20px;
+	    span {
+	        font-family: "Open Sans";
+	        font-weight: 300;
+	        font-size: 16px;
+	    }
+	}
+
+	.footer--address {
+	    font-family: "Open Sans";
+	    font-weight: 300;
+	    font-size: 16px;
+	    line-height: 20px;
+	    color: #2e2e2e;
+	}
+
+	.footer--p-last {
+	    font-family: "Open Sans";
+	    font-weight: 100;
+	    font-size: 18px;
+	    line-height: 36px;
+	}
+	.footer--a-make-order,
+	.footer--a-question {
+	    padding: 10px 0;
+	    margin-bottom: 10px;
+	}
+
+	.footer--a-question {
+		background: $white;
+		color: $green;
+		border-top: 1px solid $green;
+		border-left: 1px solid $green;
+		border-right: 1px solid $green;
+		&:hover {
+			background: $green;
+			color: $white;
+		}
+	}
+
+	.eldom {
+	    margin-top: 30px;
+	}
+
+	#yamaps {
+	    height: 300px;
+	    padding: 10px
+	}
+}

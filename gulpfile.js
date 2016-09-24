@@ -39,6 +39,7 @@ gulp.task('scripts', function() {
         'app/libs/modernizr.js',
         'app/libs/jquery.maskedinput/dist/jquery.maskedinput.js',
         'app/libs/sweetalert/dist/sweetalert.min.js',
+        'app/libs/lity/dist/lity.js',
         'app/libs/wow.js'
         ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js

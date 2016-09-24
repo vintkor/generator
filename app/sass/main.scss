@@ -3,6 +3,8 @@ $black: #000;
 $dark: #232222;
 $green: #17a858;
 
+$red: #EF6565;
+
 @import "_fonts";
 
 ::selection {
@@ -79,6 +81,8 @@ p,li,h1,h2,h3,h4,h5,h6 {
 header {
 	background: $dark;
 	padding: 7px 0 4px;
+	position: relative;
+	z-index: 20;
 	p {
 		color: $white;
 		font: 16px "Open Sans";
@@ -108,6 +112,49 @@ header {
 	}
 }
 
+.fixed {
+	position: fixed;
+	z-index: 700;
+	background: $white;
+	margin: 0 auto;
+}
+
+/* ___________________________Top-Nav___________________________ */
+
+nav {
+	position: absolute;
+	transform: translateY(-73px);
+	height: 73px;
+    top: -10px;
+	display: flex;
+	align-items: center;
+	background: $white;
+	width: calc( (100% / 12) * 9 );
+	text-align: center;
+	transition: .3s;
+	li {
+		display: inline-block;
+		list-style: none;
+		a {
+			font: 16px "Roboto";
+			font-weight: 100;
+			line-height: 10px;
+			display: block;
+			padding: 0 48px;
+			color: $black;
+			&:hover,
+			&:focus {
+				text-decoration: none;
+				color: $green;
+			}
+		}
+	}
+}
+
+.togller:checked + nav {
+	transform: translateY(0);
+}
+
 /* ___________________________Top-Phone___________________________ */
 
 button {
@@ -134,6 +181,9 @@ button {
 }
 .top-phone {
 	padding: 18px 0 0px;
+	.row {
+		position: relative;
+	}
 	img {
 		float: left;
 		margin-right: 20px;
@@ -157,6 +207,7 @@ button {
 /* ___________________________Top-Slide___________________________ */
 
 .top-slide {
+	overflow: hidden;
 	background: url("../img/top-slide-bg.png") no-repeat center;
 	background-size: cover;
 	padding: 130px 0 70px;
@@ -867,6 +918,11 @@ footer {
     }
 }
 
+.btn-close {
+	background: $red;
+	border-color: darken($red, 15%);
+}
+
 /*----------- Modal -------------*/
 
 .bs-example-modal-lg1 {
@@ -887,3 +943,7 @@ footer {
         color: #363636;
     }
 }
+
+@import "_max-1200";
+@import "_max-992";
+@import "_max-768";

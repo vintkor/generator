@@ -1,5 +1,363 @@
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
 
+	.flex {
+		display: flex;
+		align-items: center;
+	}
 
+	/* ___________________________Header___________________________ */
 
+	header {
+		.logo {
+			margin-top: 5px;
+		}
+	}
+
+	/* ___________________________Top-Nav___________________________ */
+
+	nav {
+		position: absolute;
+		transform: translateY(-73px);
+		height: 73px;
+	    top: -10px;
+		display: flex;
+		align-items: center;
+		background: $white;
+		width: calc( (100% / 12) * 9 );
+		text-align: center;
+		transition: .3s;
+		li {
+			display: inline-block;
+			list-style: none;
+			a {
+				font: 16px "Roboto";
+				font-weight: 100;
+				line-height: 10px;
+				display: block;
+				padding: 0 48px;
+				color: $black;
+				&:hover,
+				&:focus {
+					text-decoration: none;
+					color: $green;
+				}
+			}
+		}
+	}
+
+	.togller:checked + nav {
+		transform: translateY(0);
+	}
+
+	/* ___________________________Top-Phone___________________________ */
+
+	button {
+		font: 14px "Roboto";
+		padding: 5px 7px;
+	}
+
+	.top-phone {
+		padding: 10px 0 5px;
+		img {
+			margin-right: 10px;
+			margin-bottom: 15px;
+			margin-top: 14px;
+		}
+		.phone {
+			font: 16px "Roboto";
+			line-height: 5px;
+		}
+		button {
+			margin-top: 5px;
+		}
+	}
+
+	/* ___________________________Top-Slide___________________________ */
+
+	.top-slide {
+		padding: 40px 0 70px;
+		img {
+			margin-top: -200px;
+			margin-left: 400px;
+			max-width: 400px;
+		}
+		h1 {
+			font: 32px "Roboto";
+			max-width: 400px;
+		}
+		h2 {
+			font: 24px "Roboto Thin";
+			max-width: 400px;
+		}
+	}
+
+	/* ___________________________Triggers___________________________ */
+
+	.triggers {
+		margin-top: -90px;
+		.col-sm-1-5 {
+			padding-left: 10px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			&:last-child {
+				padding-right: 10px;
+			}
+		}
+		.wrapper {
+			height: 160px;
+			padding-top: 15px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		img {
+			padding-bottom: 15px;
+			max-width: 40px;
+			height: auto;
+		}
+		p {
+			font: 13px "Open Sans";
+			font-weight: 100;
+		}
+	}
+
+	/* ___________________________Price___________________________ */
+
+	.price {
+		padding-bottom: 70px;
+		h2 {
+			font: 30px "Roboto";
+			padding-bottom: 30px;
+		}
+		table {
+			margin-top: 30px;
+			.logo-2 {
+				padding-left: 20px;
+			}
+			thead {
+				h3 {
+					font: 20px "Roboto";
+				}
+				img {
+					max-width: 145px;
+				}		
+			}
+		}
+	}
+
+	/* ___________________________Price 2___________________________ */
+
+	.price-2 {
+		border-top: 1px solid #ebebeb;
+		td,
+		th {
+			width: 495px;
+		}
+		th {
+			padding-top: 25px !important;
+			&:last-child {
+				padding-top: 0;
+				img {
+					margin-top: 0 !important;
+				}
+			}
+		}
+		thead {
+			h3 {
+				font: 20px "Roboto";
+			}
+			img {
+				max-width: 145px !important;
+			}
+		}
+		.logo-2 {
+			padding-left: 70px !important;
+		}
+	}
+
+	/* ___________________________Opt___________________________ */
+
+	.opt {
+		padding-bottom: 68px;
+		h2 {
+			font: 30px "Roboto";
+		}
+		.dark {
+			padding: 10px 20px;
+			margin-bottom: 8px;
+		}
+		.big {
+			font: 50px "Open Sans";
+		}
+		.first {
+			margin-top: 40px;
+		}
+		.desc {
+			font: 14px "Open Sans";
+			line-height: 18px;
+			span {
+				font-size: 14px;
+			}
+			.last {
+				font: 14px "Open Sans";
+			}
+		}
+	}
+
+	/* ___________________________Arenda___________________________ */
+
+	.arenda {
+		padding: 40px 0 60px;
+		.border {
+			padding: 30px;
+		}
+		p {
+			margin-left: 100px;
+		}
+	}
+
+	/* ___________________________How we work______________________ */
+
+	.work {
+		padding: 40px 0;
+		.flex {
+			padding: 10px 0;
+		}
+		.cart {
+			margin-top: 10px;
+		}
+		h2 {
+			font: 30px "Roboto";
+		}
+		.first {
+			margin-top: 40px;
+		}
+	}
+
+	/* ___________________________Why BlueSun______________________ */
+
+	.why {
+		margin-top: 30px;
+		.block {
+			margin-top: 30px;
+			margin-bottom: 30px;
+			padding: 20px;
+		}
+		h2 {
+			font: 30px "Roboto";
+			line-height: 34px;
+			padding-bottom: 30px;
+		}
+		p {
+			margin-top: 30px;
+			line-height: 22px;
+		}
+	}
+
+	/* ___________________________Sertificats______________________ */
+
+	.sertificats {
+		padding: 40px 0;
+		h2 {
+			font: 30px "Roboto";
+			line-height: 36px;
+			padding-bottom: 30px;
+		}
+		img {
+			margin-top: 30px;
+		}
+		a:nth-child(2) img {
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+	}
+
+	/* ___________________________Video______________________ */
+
+	.video-sec {
+		background: #def2f2;
+		padding-top: 30px;
+		overflow: hidden;
+		h2 {
+			font: 30px "Roboto";
+			font-weight: 100;
+			&:before {
+				bottom: -30px;
+				left: 200px;
+				transform: rotate(40deg);
+			}
+		}
+		.tab {
+			margin-right: 100px;
+		}
+		.youtube {
+			a {
+				img {
+					margin-left: 125px;
+				}
+			}
+		}
+	}
+
+	/* ___________________________questions______________________ */
+
+	.questions {
+		padding: 40px 0 30px;
+		h2 {
+			font: 30px "Roboto";
+			font-weight: 100;
+		}
+		h3 {
+			font: 26px "Roboto";
+			font-weight: 100;
+		}
+		.table-3 {
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+		tr td:first-child {
+			font: 16px "Roboto";
+			font-weight: 100;
+			line-height: 24px;
+			text-align: left;
+			padding-left: 30px;
+		}
+	}
+
+	/*--------------------- Footer -----------------------*/
+
+	footer {
+	    padding: 30px 0;
+	    h2 {
+			font: 30px "Roboto";
+			font-weight: 100;
+			line-height: 36px;
+			padding-bottom: 30px;
+		}
+	}
+
+	.footer--a-look-on-maps {
+		bottom: -15px;
+	}
+
+	.footer--a-make-order,
+	.footer--a-question {
+	    width: 190px;
+	}
+
+	.eldom {
+	    margin-top: 6px;
+	    a {
+	        color: $green;
+	    }
+	}
+	/*----------- Modal -------------*/
+
+	.bs-example-modal-lg1 {
+	    text-align: center;
+	}
+
+	#yamaps {
+	    height: 400px;
+	    padding: 10px
+	}
 }

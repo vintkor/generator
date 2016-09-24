@@ -23,49 +23,59 @@
 </head>
 <body>
 
+
 <header>
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-sm-3">
         <img src="img/logo.png" class="logo">
       </div>
-      <div class="col-md-4 col-md-offset-2">
+      <div class="col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-1 col-xs-8 col-xs-offset-0">
         <p><img src="img/place.png"> Киев, БЦ "Чайки-Плаза", оф. 114.1</p>
       </div>
-      <div class="col-md-3 align-right">
-        <label for="">Меню <img src="img/menu.png"></label>
+      <div class="col-md-3 col-sm-2 col-xs-4 align-right">
+        <label for="top-nav">Меню <img src="img/menu.png"></label>
       </div>
     </div>
   </div>
 </header>
 
-
 <section class="top-phone">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-sm-3 col-xs-6">
         <img src="img/vadafone.png">
         <p>Бесплатно для Vodafone:</p>
         <p class="phone"><span class="phone-code">(095)</span> 5110077</p>
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-3 col-xs-6">
         <img src="img/kyivstar.png">
         <p>Бесплатно для Kyivstar:</p>
         <p class="phone"><span class="phone-code">(068)</span> 5110077</p>
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-3 col-xs-6">
         <img src="img/lifecell.png">
         <p>Бесплатно для Lifecell:</p>
         <p class="phone"><span class="phone-code">(063)</span> 5110077</p>
       </div>
-      <div class="col-md-3">
-        <button>Заказать обратный звонок</button>
+      <div class="col-sm-3 col-xs-6">
+        <button data-toggle="modal" data-target=".bs-example-modal-lg">Заказать обратный звонок</button>
       </div>
+      <input class="togller hidden" type="checkbox" id="top-nav" name="">
+      <nav>
+        <ul>
+          <li><a  class="menuItem" href="#header"">Начало</a></li>
+          <li><a  class="menuItem" href="#price"">Цены</a></li>
+          <li><a  class="menuItem" href="#sertificats"">Сертификаты</a></li>
+          <li><a  class="menuItem" href="#video"">Видео</a></li>
+          <li><a  class="menuItem" href="#contacts"">Контакты</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
 </section>
 
-<section class="top-slide">
+<section class="top-slide"  id="header">
   <div class="container">
     <div class="row">
       <div class="col-md-7">
@@ -116,7 +126,7 @@
   </div>
 </section>
 
-<section class="price">
+<section class="price" id="price">
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
@@ -368,7 +378,7 @@
       </div>
     </div>
     <div class="row no-gutter first">
-      <div class="col-md-6">
+      <div class="col-md-6 col-sm-6">
         <div class="dark">
           <div class="row flex">
             <div class="col-md-4">
@@ -380,7 +390,7 @@
           </div>          
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 col-sm-6">
         <div class="dark">
           <div class="row flex">
             <div class="col-md-4">
@@ -394,7 +404,7 @@
       </div>
     </div>
     <div class="row no-gutter">
-      <div class="col-md-6">
+      <div class="col-md-6 col-sm-6">
         <div class="dark">
           <div class="row flex">
             <div class="col-md-4">
@@ -406,7 +416,7 @@
           </div>          
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 col-sm-6">
         <div class="dark">
           <div class="row flex">
             <div class="col-md-4">
@@ -425,12 +435,12 @@
 <section class="arenda">
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2 border">
+      <div class="col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 border">
         <h2>Хотите вначале попробовать? Возьмите <span class="green">в аренду от 300 грн/сутки</span></h2>
         <p>(095) 5110077 — бесплатно для Vodafone</p>
         <p>(068) 5110077 — бесплатно для Kyivstar</p>
         <p>(063) 5110077 — бесплатно для Lifecell</p>
-        <button>НАПИШИТЕ НАМ</button>
+        <button data-toggle="modal" data-target=".bs-example-modal-lg">НАПИШИТЕ НАМ</button>
       </div>
     </div>
   </div>
@@ -444,7 +454,7 @@
       </div>
     </div>
     <div class="row first">
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
         <div class="dark">
           <div class="row flex">
             <div class="col-md-3">
@@ -456,7 +466,7 @@
           </div>          
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
         <div class="dark">
           <div class="row flex">
             <div class="col-md-3">
@@ -468,7 +478,7 @@
           </div>          
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
         <div class="dark">
           <div class="row flex">
             <div class="col-md-3">
@@ -480,9 +490,7 @@
           </div>          
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
         <div class="dark">
           <div class="row flex">
             <div class="col-md-3">
@@ -494,7 +502,7 @@
           </div>          
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
         <div class="dark">
           <div class="row flex">
             <div class="col-md-3">
@@ -506,7 +514,7 @@
           </div>          
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
         <div class="dark">
           <div class="row flex">
             <div class="col-md-3">
@@ -535,7 +543,7 @@
   </div>
 </section>
 
-<section class="sertificats">
+<section class="sertificats" id="sertificats">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -552,18 +560,20 @@
   </div>
 </section>
 
-<section class="video-sec">
+<section class="video-sec" id="video">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-5 col-lg-6">
         <h2>Смотреть видео с производства генераторов <span class="green">BLUESUN</span></h2>
         <img class="fuu" src="img/fubag.png">
       </div>
-      <div class="col-md-6 align-right youtube">
+      <div class="col-md-7 col-lg-6 align-right youtube">
         <img class="tab" src="img/tab.png">
-        <a href="">
+        <div  id="video-gallery">
+        <a href="https://www.youtube.com/watch?v=z_zTaSXd7qQ" data-lity>
           <img src="img/YouTube-icon-full_color.png">
         </a>
+        </div>
       </div>
     </div>
   </div>
@@ -629,7 +639,7 @@
   </div>
 </section>
 
-<footer>
+<footer id="contacts">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -677,7 +687,9 @@
       <h3>Киев, БЦ "Чайки-Плаза", оф. 114.1</h3>
       <p>(напртив обойного рынка, возле Биллы)</p>
       <div id="yamaps"></div>
-      <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      <div class="modal-footer">
+        <button type="button" class="btn-close" data-dismiss="modal">Закрыть</button>      
+      </div>
     </div>
   </div>
 </div>
@@ -685,40 +697,38 @@
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content col-sm-12">
-      <div class="col-sm-offset-2 col-sm-8">
+      <div class="modal-header">
         <h2>Опишите, пожалуйста, ваш вопрос</h2>
       </div>
-      <form role="form" id="ajaxform" method="post" class="form-horizontal">
-        <div class="form-group">
-          <!-- <label for="name" class="col-sm-4 control-label">Введите Ваше имя</label> -->
-          <div class="col-sm-offset-2 col-sm-8">
-            <input class="form-control" id="name" type="text" placeholder="Введите Ваше имя" name="name">
+      <div class="modal-body">
+        <form role="form" id="ajaxform" method="post" class="form-horizontal">
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-8">
+              <input class="form-control" id="name" type="text" placeholder="Введите Ваше имя" name="name">
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <!-- <label for="email" class="col-sm-4 control-label">Введите Вашу почту</label> -->
-          <div class="col-sm-offset-2 col-sm-8">
-            <input class="form-control" id="email" type="email" placeholder="Введите Вашу почту" name="email">
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-8">
+              <input class="form-control" id="email" type="email" placeholder="Введите Вашу почту" name="email">
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <!-- <label for="phone" class="col-sm-4 control-label">Введите Ваш телефон <span class="accent">*</span></label> -->
-          <div class="col-sm-offset-2 col-sm-8">
-            <input class="form-control phone" id="phone" type="phone" placeholder="Введите Ваш телефон *" name="phone" >
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-8">
+              <input class="form-control phone" id="phone" type="phone" placeholder="Введите Ваш телефон *" name="phone" >
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <!-- <label class="col-sm-4 control-label">Введите Ваше сообщение</label> -->
-          <div class="col-sm-offset-2 col-sm-8">
-            <textarea class="form-control" id="message" name="message" placeholder="Введите Ваше сообщение" rows="9"></textarea>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-8">
+              <textarea class="form-control" id="message" name="message" placeholder="Введите Ваше сообщение" rows="9"></textarea>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-offset-2 col-sm-8">
-          <p><span class="accent">*</span> Поле, отмеченное звёздочкой, является обязательными для подтверждения ваших данных</p>
-        </div>
-        <div class="col-sm-offset-2 col-sm-8" style="margin-bottom: 30px;">
-          <button type="submit" id="submit" class="send btn btn-success">Отправить сейчас</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+          <div class="col-sm-offset-2 col-sm-8">
+            <p><span class="accent">*</span> Поле, отмеченное звёздочкой, является обязательными для подтверждения ваших данных</p>
+          </div>        
+      </div>
+        <div class="modal-footer">
+            <button type="submit" id="submit" class="send">Отправить сейчас</button>
+            <button type="button" class="btn-close" data-dismiss="modal">Закрыть</button>
         </div>
       </form>
     </div>
@@ -728,6 +738,5 @@
 <!-- build:js -->
 <script src="js/main.js"></script>
 <!-- endbuild -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </body>
 </html>
