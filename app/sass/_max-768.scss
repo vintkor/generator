@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
 	.col-xs-1-5 {
 	  width: 100%;
@@ -26,38 +26,13 @@
 	/* ___________________________Top-Nav___________________________ */
 
 	nav {
-		position: absolute;
-		transform: translateY(-73px);
-		height: 73px;
-	    top: -10px;
-		display: flex;
-		align-items: center;
-		background: $white;
-		width: calc( (100% / 12) * 9 );
-		text-align: center;
-		transition: .3s;
-		li {
-			display: inline-block;
-			list-style: none;
-			a {
-				font: 16px "Roboto";
-				font-weight: 100;
-				line-height: 10px;
-				display: block;
-				padding: 0 48px;
-				color: $black;
-				&:hover,
-				&:focus {
-					text-decoration: none;
-					color: $green;
-				}
-			}
-		}
+	transform: translateY(-370px);
+	height: 370px;
+    top: 130px;
+	li {
+		padding: 5px 0;
 	}
-
-	.togller:checked + nav {
-		transform: translateY(0);
-	}
+}
 
 	/* ___________________________Top-Phone___________________________ */
 
@@ -91,19 +66,23 @@
 	/* ___________________________Top-Slide___________________________ */
 
 	.top-slide {
+		text-align: center;
 		padding: 30px 0 20px;
 		img {
-			margin-top: 0px;
+			margin: 0 !important;
+			margin-bottom: 40px  !important;
 		}
 		h1 {
 			font: 30px "Roboto";
 			font-weight: 500;
 			line-height: 36px;
+			max-width: none;
 		}
 		h2 {
 			font: 24px "Roboto Thin";
 			font-weight: 50;
 			line-height: 30px;
+			max-width: none;
 		}
 		img {
 			margin-left: 50px;
@@ -130,15 +109,15 @@
 			height: 130px;
 		}
 		p {
-			font: 16px "Open Sans";
-			font-weight: 700;
+			font: 13px "Open Sans";
+			font-weight: 100;
 		}
 	}
 
 	/* ___________________________Price___________________________ */
 
 	.price {
-		overflow-x: scroll;		
+		// overflow-x: scroll;		
 		padding-bottom: 30px;
 		h2 {
 			font: 24px "Roboto";
@@ -148,6 +127,8 @@
 			padding-top: 0;
 		}
 		table {
+			// width: 100vw !important;
+			// transform: scale(.5);
 			margin-top: 20px;
 			border-spacing: 2px;
 			.logo-2 {
@@ -276,6 +257,8 @@
 			margin-top: 30px;
 			font: 16px "Open Sans";
 			font-weight: 300;
+			width: 100%;
+			max-width: 300px;
 		}
 	}
 
@@ -366,20 +349,22 @@
 			margin-bottom: -115px;
 		}
 		.tab {
-			margin-bottom: 0px;
-			margin-top: 35px;
+			// margin-bottom: 0px;
+			max-width: 100%;
+			// margin-top: 35px;
+
 			width: 320px;
 		}
 		.youtube {
 			position: relative;
 			a {
 				display: block;
-				margin-top: -355px;
-				margin-left: -43px;
+				// margin-top: -355px;
+				// margin-left: -43px;
 				img {
 					display: block;
-					margin-left: 60px;
-					width: 286px;
+					// margin-left: 60px;
+					// width: 286px;
 				}
 			}
 		}
@@ -540,5 +525,9 @@
 	#yamaps {
 	    height: 300px;
 	    padding: 10px
+	}
+
+	table {
+		
 	}
 }

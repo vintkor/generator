@@ -16,37 +16,14 @@
 	/* ___________________________Top-Nav___________________________ */
 
 	nav {
-		position: absolute;
-		transform: translateY(-73px);
-		height: 73px;
-	    top: -10px;
-		display: flex;
-		align-items: center;
-		background: $white;
-		width: calc( (100% / 12) * 9 );
-		text-align: center;
-		transition: .3s;
+		justify-content: center;
 		li {
-			display: inline-block;
-			list-style: none;
+			font-size: 14px;
+			font-weight: 400;
 			a {
-				font: 16px "Roboto";
-				font-weight: 100;
-				line-height: 10px;
-				display: block;
-				padding: 0 48px;
-				color: $black;
-				&:hover,
-				&:focus {
-					text-decoration: none;
-					color: $green;
-				}
+				font-size: 14px;
 			}
 		}
-	}
-
-	.togller:checked + nav {
-		transform: translateY(0);
 	}
 
 	/* ___________________________Top-Phone___________________________ */
@@ -287,12 +264,12 @@
 			}
 		}
 		.tab {
-			margin-right: 100px;
+			// margin-right: 100px;
 		}
 		.youtube {
 			a {
 				img {
-					margin-left: 125px;
+					// margin-left: 125px;
 				}
 			}
 		}

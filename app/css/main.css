@@ -162,7 +162,7 @@ header {
   background: #232222;
   padding: 7px 0 4px;
   position: relative;
-  z-index: 20; }
+  z-index: 70; }
   header p {
     color: #fff;
     font: 16px "Open Sans";
@@ -172,7 +172,7 @@ header {
       margin-right: 10px;
       margin-top: -4px; }
   header label {
-    color: #17a858;
+    color: #fff;
     text-transform: uppercase;
     font: 19px "Roboto";
     font-weight: 100;
@@ -180,7 +180,8 @@ header {
     header label img {
       margin-top: -3px; }
     header label:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      color: #17a858; }
   header .logo {
     width: 100%;
     height: auto; }
@@ -193,12 +194,17 @@ header {
 
 /* ___________________________Top-Nav___________________________ */
 nav {
+  z-index: 60;
+  width: 100%;
   position: absolute;
-  -webkit-transform: translateY(-73px);
-      -ms-transform: translateY(-73px);
-          transform: translateY(-73px);
-  height: 73px;
-  top: -10px;
+  -webkit-transform: translateY(-200px);
+      -ms-transform: translateY(-200px);
+          transform: translateY(-200px);
+  height: 200px;
+  top: 50px;
+  background: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -206,22 +212,21 @@ nav {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center;
-  background: #fff;
-  width: -webkit-calc( (100% / 12) * 9);
-  width: calc( (100% / 12) * 9);
-  text-align: center;
-  -webkit-transition: .3s;
-  transition: .3s; }
+          align-items: center; }
+  nav ul {
+    padding-left: 0; }
   nav li {
     display: inline-block;
-    list-style: none; }
+    list-style: none;
+    font: 16px "Open Sans";
+    font-weight: 900;
+    width: 100%;
+    padding: 10px 0; }
     nav li a {
-      font: 16px "Roboto";
+      font: 14px "Open Sans";
       font-weight: 100;
       line-height: 10px;
       display: block;
-      padding: 0 48px;
       color: #000; }
       nav li a:hover, nav li a:focus {
         text-decoration: none;
@@ -622,16 +627,17 @@ button {
     margin-top: 20px;
     margin-bottom: -115px; }
   .video-sec .tab {
-    margin-bottom: -300px;
-    margin-top: 35px; }
+    display: block;
+    bottom: -32px;
+    position: relative;
+    width: 523px;
+    margin: 0 auto; }
   .video-sec .youtube {
     position: relative; }
     .video-sec .youtube a {
-      display: block;
-      margin-top: -282px; }
+      display: block; }
       .video-sec .youtube a img {
-        display: block;
-        margin-left: 60px; }
+        display: block; }
 
 /* ___________________________questions______________________ */
 .questions {
@@ -871,44 +877,6 @@ footer {
 
 @media (max-width: 1200px) {
   /* ___________________________Top-Nav___________________________ */
-  nav {
-    position: absolute;
-    -webkit-transform: translateY(-73px);
-        -ms-transform: translateY(-73px);
-            transform: translateY(-73px);
-    height: 73px;
-    top: -10px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: #fff;
-    width: -webkit-calc( (100% / 12) * 9);
-    width: calc( (100% / 12) * 9);
-    text-align: center;
-    -webkit-transition: .3s;
-    transition: .3s; }
-    nav li {
-      display: inline-block;
-      list-style: none; }
-      nav li a {
-        font: 16px "Roboto";
-        font-weight: 100;
-        line-height: 10px;
-        display: block;
-        padding: 0 48px;
-        color: #000; }
-        nav li a:hover, nav li a:focus {
-          text-decoration: none;
-          color: #17a858; }
-  .togller:checked + nav {
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0); }
   /* ___________________________Top-Phone___________________________ */
   button {
     font: 14px "Roboto";
@@ -966,8 +934,6 @@ footer {
     position: absolute; }
   .video-sec .fuu {
     display: none; }
-  .video-sec .youtube a img {
-    margin-left: 40px; }
   /*--------------------- Footer -----------------------*/
   .footer--a-make-order,
   .footer--a-question {
@@ -988,43 +954,15 @@ footer {
     margin-top: 5px; }
   /* ___________________________Top-Nav___________________________ */
   nav {
-    position: absolute;
-    -webkit-transform: translateY(-73px);
-        -ms-transform: translateY(-73px);
-            transform: translateY(-73px);
-    height: 73px;
-    top: -10px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: #fff;
-    width: -webkit-calc( (100% / 12) * 9);
-    width: calc( (100% / 12) * 9);
-    text-align: center;
-    -webkit-transition: .3s;
-    transition: .3s; }
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     nav li {
-      display: inline-block;
-      list-style: none; }
+      font-size: 14px;
+      font-weight: 400; }
       nav li a {
-        font: 16px "Roboto";
-        font-weight: 100;
-        line-height: 10px;
-        display: block;
-        padding: 0 48px;
-        color: #000; }
-        nav li a:hover, nav li a:focus {
-          text-decoration: none;
-          color: #17a858; }
-  .togller:checked + nav {
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0); }
+        font-size: 14px; }
   /* ___________________________Top-Phone___________________________ */
   button {
     font: 14px "Roboto";
@@ -1183,10 +1121,6 @@ footer {
         -webkit-transform: rotate(40deg);
             -ms-transform: rotate(40deg);
                 transform: rotate(40deg); }
-    .video-sec .tab {
-      margin-right: 100px; }
-    .video-sec .youtube a img {
-      margin-left: 125px; }
   /* ___________________________questions______________________ */
   .questions {
     padding: 40px 0 30px; }
@@ -1229,7 +1163,7 @@ footer {
     height: 400px;
     padding: 10px; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .col-xs-1-5 {
     width: 100%;
     float: left; }
@@ -1252,43 +1186,13 @@ footer {
       max-width: 280px; }
   /* ___________________________Top-Nav___________________________ */
   nav {
-    position: absolute;
-    -webkit-transform: translateY(-73px);
-        -ms-transform: translateY(-73px);
-            transform: translateY(-73px);
-    height: 73px;
-    top: -10px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: #fff;
-    width: -webkit-calc( (100% / 12) * 9);
-    width: calc( (100% / 12) * 9);
-    text-align: center;
-    -webkit-transition: .3s;
-    transition: .3s; }
+    -webkit-transform: translateY(-370px);
+        -ms-transform: translateY(-370px);
+            transform: translateY(-370px);
+    height: 370px;
+    top: 130px; }
     nav li {
-      display: inline-block;
-      list-style: none; }
-      nav li a {
-        font: 16px "Roboto";
-        font-weight: 100;
-        line-height: 10px;
-        display: block;
-        padding: 0 48px;
-        color: #000; }
-        nav li a:hover, nav li a:focus {
-          text-decoration: none;
-          color: #17a858; }
-  .togller:checked + nav {
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0); }
+      padding: 5px 0; }
   /* ___________________________Top-Phone___________________________ */
   button {
     color: #fff;
@@ -1312,17 +1216,21 @@ footer {
       line-height: 3px; }
   /* ___________________________Top-Slide___________________________ */
   .top-slide {
+    text-align: center;
     padding: 30px 0 20px; }
     .top-slide img {
-      margin-top: 0px; }
+      margin: 0 !important;
+      margin-bottom: 40px  !important; }
     .top-slide h1 {
       font: 30px "Roboto";
       font-weight: 500;
-      line-height: 36px; }
+      line-height: 36px;
+      max-width: none; }
     .top-slide h2 {
       font: 24px "Roboto Thin";
       font-weight: 50;
-      line-height: 30px; }
+      line-height: 30px;
+      max-width: none; }
     .top-slide img {
       margin-left: 50px;
       max-width: 350px;
@@ -1341,11 +1249,10 @@ footer {
     .triggers .wrapper {
       height: 130px; }
     .triggers p {
-      font: 16px "Open Sans";
-      font-weight: 700; }
+      font: 13px "Open Sans";
+      font-weight: 100; }
   /* ___________________________Price___________________________ */
   .price {
-    overflow-x: scroll;
     padding-bottom: 30px; }
     .price h2 {
       font: 24px "Roboto";
@@ -1442,7 +1349,9 @@ footer {
     .arenda button {
       margin-top: 30px;
       font: 16px "Open Sans";
-      font-weight: 300; }
+      font-weight: 300;
+      width: 100%;
+      max-width: 300px; }
   /* ___________________________How we work______________________ */
   .work {
     padding: 30px 0; }
@@ -1507,19 +1416,14 @@ footer {
       margin-top: 20px;
       margin-bottom: -115px; }
     .video-sec .tab {
-      margin-bottom: 0px;
-      margin-top: 35px;
+      max-width: 100%;
       width: 320px; }
     .video-sec .youtube {
       position: relative; }
       .video-sec .youtube a {
-        display: block;
-        margin-top: -355px;
-        margin-left: -43px; }
+        display: block; }
         .video-sec .youtube a img {
-          display: block;
-          margin-left: 60px;
-          width: 286px; }
+          display: block; }
   /* ___________________________questions______________________ */
   .questions {
     overflow: hidden;

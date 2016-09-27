@@ -43,7 +43,7 @@ gulp.task('scripts', function() {
         'app/libs/wow.js'
         ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
-        //.pipe(uglify()) // Сжимаем JS файл
+        .pipe(uglify()) // Сжимаем JS файл
         .pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
 });
 

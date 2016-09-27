@@ -76,13 +76,20 @@ p,li,h1,h2,h3,h4,h5,h6 {
 	align-items: center;
 }
 
+// .table-container
+// {
+//   width: 100%;
+//   overflow-y: auto;
+//   margin: 0 0 1em;
+// }
+
 /* ___________________________Header___________________________ */
 
 header {
 	background: $dark;
 	padding: 7px 0 4px;
 	position: relative;
-	z-index: 20;
+	z-index: 70;
 	p {
 		color: $white;
 		font: 16px "Open Sans";
@@ -94,7 +101,7 @@ header {
 		}
 	}
 	label {
-		color: $green;
+		color: $white;
 		text-transform: uppercase;
 		font: 19px "Roboto";
 		font-weight: 100;
@@ -104,6 +111,7 @@ header {
 		}
 		&:hover {
 			cursor: pointer;
+			color: $green;
 		}
 	}
 	.logo {
@@ -122,25 +130,31 @@ header {
 /* ___________________________Top-Nav___________________________ */
 
 nav {
+	z-index: 60;
+	width: 100%;
 	position: absolute;
-	transform: translateY(-73px);
-	height: 73px;
-    top: -10px;
+	transform: translateY(-200px);
+	height: 200px;
+    top: 50px;
+	background: $white;
+	transition: .3s;
 	display: flex;
 	align-items: center;
-	background: $white;
-	width: calc( (100% / 12) * 9 );
-	text-align: center;
-	transition: .3s;
+	ul {
+		padding-left: 0;
+	}
 	li {
 		display: inline-block;
 		list-style: none;
+		font: 16px "Open Sans";
+		font-weight: 900;
+		width: 100%;
+		padding: 10px 0;
 		a {
-			font: 16px "Roboto";
+			font: 14px "Open Sans";
 			font-weight: 100;
 			line-height: 10px;
 			display: block;
-			padding: 0 48px;
 			color: $black;
 			&:hover,
 			&:focus {
@@ -153,6 +167,7 @@ nav {
 
 .togller:checked + nav {
 	transform: translateY(0);
+
 }
 
 /* ___________________________Top-Phone___________________________ */
@@ -642,17 +657,20 @@ button {
 		margin-bottom: -115px;
 	}
 	.tab {
-		margin-bottom: -300px;
-		margin-top: 35px;
+		display: block;
+		bottom: -32px;
+		position: relative;
+		width: 523px;
+		margin: 0 auto;
 	}
 	.youtube {
 		position: relative;
 		a {
 			display: block;
-			margin-top: -282px;
+			// margin-top: -282px;
 			img {
 				display: block;
-				margin-left: 60px;
+				// margin-left: 60px;
 			}
 		}
 	}
