@@ -1265,46 +1265,42 @@ footer {
       border-spacing: 2px; }
       .price table .logo-2 {
         padding-left: 30px; }
+      .price table thead th {
+        text-align: center;
+        padding: 5px !important; }
       .price table thead h3 {
-        font: 20px "Roboto";
+        font: 12px "Roboto" !important;
         font-weight: 400; }
       .price table thead h4 {
-        font: 16px "Roboto";
+        font: 12px "Roboto" !important;
         font-weight: 100;
         padding-bottom: 10px; }
       .price table thead p {
-        font: 14px "Roboto";
+        display: none !important;
+        font: 12px "Roboto" !important;
         font-weight: 100;
         line-height: 20px; }
+      .price table thead img {
+        max-width: 64px !important;
+        max-height: 100px; }
       .price table tbody tr td {
-        font: 18px "Roboto";
+        text-align: center;
+        font: 10px "Roboto";
         font-weight: 400;
         line-height: 20px; }
         .price table tbody tr td:first-child {
-          font-size: 15px;
+          font-size: 12px;
           font-weight: 100;
-          line-height: 22px; }
+          line-height: 18px; }
       .price table td,
       .price table th {
-        padding: 10px 10px; }
+        padding: 5px 5px; }
       .price table th {
         padding-top: 0px; }
         .price table th:last-child {
           padding-top: 3px; }
           .price table th:last-child img {
             margin-top: 15px; }
-  /* ___________________________Price 2___________________________ */
-  .price-2 {
-    border-top: 1px solid #ebebeb; }
-    .price-2 td,
-    .price-2 th {
-      width: 495px; }
-    .price-2 th {
-      padding-top: 25px !important; }
-      .price-2 th:last-child {
-        padding-top: 5px !important; }
-        .price-2 th:last-child img {
-          margin-top: 15px !important; }
   /* ___________________________Opt___________________________ */
   .opt {
     padding-bottom: 30px; }
