@@ -157,6 +157,28 @@ p, li, h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center; }
 
+/* ___________________________headroom___________________________ */
+.headroom {
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  -webkit-transition: -webkit-transform ease-in-out .3s;
+  transition: -webkit-transform ease-in-out .3s;
+  transition: transform ease-in-out .3s;
+  transition: transform ease-in-out .3s, -webkit-transform ease-in-out .3s; }
+
+.headroom--unpinned {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%); }
+
+.headroom--pinned {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0); }
+
 /* ___________________________Header___________________________ */
 header {
   background: #232222;
@@ -262,6 +284,7 @@ button {
     outline: none; }
 
 .top-phone {
+  background: #fff;
   padding: 18px 0 0px; }
   .top-phone .row {
     position: relative; }
@@ -282,6 +305,7 @@ button {
 
 /* ___________________________Top-Slide___________________________ */
 .top-slide {
+  margin-top: 131px;
   overflow: hidden;
   background: url("../img/top-slide-bg.png") no-repeat center;
   background-size: cover;
@@ -725,7 +749,7 @@ button {
 
 /*--------------------- Footer -----------------------*/
 footer {
-  padding: 90px 0;
+  padding: 90px 0 0;
   position: relative;
   text-align: center; }
   footer h2 {
@@ -858,6 +882,18 @@ footer {
 .btn-close {
   background: #EF6565;
   border-color: #e82020; }
+
+/*--------------------- old-footer ------------------*/
+.old-footer {
+  margin-top: 50px;
+  background: #f6f6f6;
+  padding: 10px 0;
+  border-top: 1px solid #e5e5e5; }
+  .old-footer p {
+    font: 12px "Roboto";
+    font-weight: 100;
+    color: #bcbcbc;
+    margin-top: 3px; }
 
 /*----------- Modal -------------*/
 .bs-example-modal-lg1 {

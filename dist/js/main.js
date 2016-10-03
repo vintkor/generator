@@ -2,6 +2,8 @@
 
 $(document).ready(function(){
 
+    $('.headroom').headroom();
+
 	/*------------------------------- Выравнивание блоков по высоте -----------------------------*/
 	function setEqualHeight(columns){
 	    var tallestcolumn = 0;

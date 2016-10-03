@@ -83,6 +83,26 @@ p,li,h1,h2,h3,h4,h5,h6 {
 //   margin: 0 0 1em;
 // }
 
+
+/* ___________________________headroom___________________________ */
+
+.headroom {
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    transition: transform ease-in-out .3s;
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+.headroom--pinned {
+    transform: translateY(0);
+}
+
 /* ___________________________Header___________________________ */
 
 header {
@@ -195,6 +215,7 @@ button {
 	}
 }
 .top-phone {
+	background: $white;
 	padding: 18px 0 0px;
 	.row {
 		position: relative;
@@ -222,6 +243,7 @@ button {
 /* ___________________________Top-Slide___________________________ */
 
 .top-slide {
+	margin-top: 131px;
 	overflow: hidden;
 	background: url("../img/top-slide-bg.png") no-repeat center;
 	background-size: cover;
@@ -784,7 +806,7 @@ button {
 /*--------------------- Footer -----------------------*/
 
 footer {
-    padding: 90px 0;
+    padding: 90px 0 0;
     position: relative;
     text-align: center;
     h2 {
@@ -939,6 +961,21 @@ footer {
 .btn-close {
 	background: $red;
 	border-color: darken($red, 15%);
+}
+
+/*--------------------- old-footer ------------------*/
+
+.old-footer {
+    margin-top: 50px;
+    background: #f6f6f6;
+	padding: 10px 0;
+	border-top: 1px solid #e5e5e5;
+	p {
+		font: 12px "Roboto";
+		font-weight: 100;
+		color: #bcbcbc;
+		margin-top: 3px;
+	}
 }
 
 /*----------- Modal -------------*/
